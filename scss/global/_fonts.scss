@@ -1,0 +1,8 @@
+@include font-face("Poppins", "../fonts/Poppins/Poppins-Regular", 400, normal);
+@include font-face("Poppins", "../fonts/Poppins/Poppins-Regular", 400, normal);
+@include font-face("Poppins", "../fonts/Poppins/Poppins-Bold", 700, normal);
+@include font-face("Poppins", "../fonts/Poppins/Poppins-Bold", 700, normal);
+
+@mixin fontFace_Poppins {
+    font-family: "Poppins", sans-serif;
+}
