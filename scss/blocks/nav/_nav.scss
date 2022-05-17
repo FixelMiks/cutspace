@@ -1,0 +1,25 @@
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 42px;
+        }
+    }
+
+    &__link {
+        margin: 0;
+        @include body0_Regular16();
+        color: $mineShaft;
+
+        &:hover {
+            @include body0_Bold16();
+            color: $crusta;
+        }
+    }
+}
