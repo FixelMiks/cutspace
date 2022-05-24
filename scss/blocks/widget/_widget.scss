@@ -1,0 +1,72 @@
+.widget {
+  &__title {
+    position: relative;
+    margin: 0;
+    padding-right: 30px;
+    @include title0_Bold18();
+    color: $black;
+    cursor: pointer;
+
+
+    &::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      background: {
+        image: url("./../img/icons/chevron-up.svg");
+        repeat: no-repeat;
+        size: initial;
+        position: center;
+      }
+      transform: translateY(-50%);
+      transition: all $animation;
+      transition-property: transform;
+    }
+  }
+
+  &__body {
+    overflow: hidden;
+    margin-top: 21px;
+    transition: all $animation;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__more {
+    border-bottom: 1px solid transparent;
+    @include body0_Regular16();
+    color: $bostonBlue;
+    transition: all $animation;
+    transition-property: border-color;
+
+    &.hide {
+      margin-top: 15px;
+    }
+
+    &:hover {
+      border-color: currentColor;
+    }
+  }
+
+  &.hidden {
+    .widget {
+      &__title {
+        &::after {
+          transform: translateY(-50%) rotate(-180deg);
+        }
+      }
+
+      &__body {
+        margin-top: 0;
+        height: 0;
+      }
+    }
+  }
+}

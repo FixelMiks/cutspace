@@ -1,0 +1,22 @@
+.btn-more {
+  display: block;
+  border-radius: $radius;
+  padding: 25px;
+  width: 100%;
+  @include caption();
+  text-align: center;
+  color: $bostonBlue;
+  background-color: $mercury;
+  transition: all $animation;
+  transition-property: background-color;
+
+  span {
+    padding-left: 20px;
+    background: url("../img/icons/plus-circle.svg") no-repeat 24px;
+    background-position: left center;
+  }
+
+  &:hover {
+    background-color: darken($color: $mercury, $amount: 10%);
+  }
+}

@@ -1,0 +1,36 @@
+.location-checkbox {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  &__input {
+    @include visually-hidden();
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    @include body1_Regular14();
+    text-align: center;
+    transition: all $animation;
+    transition-property: background-color;
+
+    &:hover {
+      background-color: $sunglow;
+    }
+  }
+
+  &__input:checked ~ &__btn {
+    @include body1_Bold14();
+    background-color: $sunglow;
+
+    &:hover {
+      background-color: darken($color: $sunglow, $amount: 10%);;
+    }
+  }
+}

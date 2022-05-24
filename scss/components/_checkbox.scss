@@ -1,0 +1,66 @@
+.checkbox {
+  position: relative;
+  display: block;
+  cursor: pointer;
+
+  &__input {
+    @include visually-hidden();
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $boulder;
+    border-radius: 2px;
+    background-color: $white;
+    transform: translateY(-50%);
+    transition: all $animation;
+    transition-property: background-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-block;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: 16px;
+      background-position: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, -50%);
+      transition: all $animation;
+      transition-property: opacity, visibility;
+    }
+  }
+
+  &__title {
+    display: block;
+    padding-left: 30px;
+    @include body0_Regular16();
+    color: $mineShaft;
+  }
+
+  &__input:checked {
+    & ~ .checkbox__btn {
+      background-color: $kournikova;
+
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    & ~ .checkbox__title {
+      @include body0_Bold16();
+    }
+  }
+}

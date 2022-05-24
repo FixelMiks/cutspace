@@ -1,0 +1,59 @@
+.switch {
+  position: relative;
+  display: block;
+  cursor: pointer;
+
+  &__input {
+    @include visually-hidden();
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    border-radius: 10px;
+    width: 37px;
+    height: 20px;
+    background-color: $boulder;
+    transform: translateY(-50%);
+    transition: all $animation;
+    transition-property: background-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: calc(0% + 2px);
+      display: inline-block;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-color: $mineShaft;
+      transform: translateY(-50%);
+      transition: all $animation;
+      transition-property: left;
+    }
+  }
+
+  &__title {
+    display: block;
+    padding-left: 52px;
+    @include body0_Regular16();
+    color: $mineShaft;
+  }
+
+  &__input:checked {
+    & ~ .switch__btn {
+      background-color: $kournikova;
+
+      &::after {
+        left: calc(100% - 19px);
+      }
+    }
+
+    & ~ .switch__title {
+      @include body0_Bold16();
+    }
+  }
+}

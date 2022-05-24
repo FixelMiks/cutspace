@@ -1,0 +1,89 @@
+.card {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 270px;
+  text-decoration: none;
+  background-color: $white;
+  transition: all 0.2s ease-in;
+  transition-property: opacity, transform;
+
+  &__badges {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__badge {
+    display: inline-block;
+    margin: 0;
+    border-radius: $radius;
+    padding: 4px 10px;
+    @include body1_Regular14();
+    background-color: $sunglow;
+    color: $black;
+
+    &--credit {
+      background-color: $mountainMeadow;
+      color: $white;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 16px 15px 20px;
+    font-style: normal;
+  }
+
+  &__title {
+    margin: 0 0 11px;
+    @include title0_Bold18();
+    color: $black;
+  }
+
+  &__term {
+    margin: 0 0 11px;
+    @include body1_Regular14();
+    color: $black;
+  }
+
+  &__metro {
+    margin: 0 0 11px;
+    @include body1_Regular14();
+    color: $black;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      margin-right: 11px;
+      width: 16px;
+      height: 11px;
+      background: {
+        image: url("./../img/icons/metro.svg");
+        size: initial;
+      }
+    }
+  }
+
+  &__address {
+    margin: 0;
+    @include body1_Regular14();
+    color: $boulder;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-5px);
+  }
+}

@@ -1,0 +1,28 @@
+.btn {
+  display: block;
+  min-width: 270px;
+  border: 1px solid transparent;
+  border-radius: $radius;
+  padding: 15px;
+  @include body0_Regular16();
+  color: $black;
+  background-color: $sunglow;
+  transition: all $animation;
+  transition-property: border-color, background-color;
+
+  &[type="reset"] {
+    border-color: $alto;
+    background-color: transparent;
+
+    span {
+      padding-left: 30px;
+      background: url("../img/icons/close.svg") no-repeat 24px;
+      background-position: left center;
+    }
+  }
+
+  &:hover {
+    border-color: darken($color: $sunglow, $amount: 10%);
+    background-color: darken($color: $sunglow, $amount: 10%);
+  }
+}

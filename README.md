@@ -1,3 +1,3 @@
-# CutSpace
+# property-project
 
-- https://fixelmiks.github.io/cutspace/
+- https://fixelmiks.github.io/property-project/

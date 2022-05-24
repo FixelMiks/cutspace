@@ -1,79 +1,47 @@
-@mixin title0_Bold54 {
-    font: {
-        weight: 700;
-        size: 54px;
-    }
-    line-height: 79px;
+@mixin title0_Bold18() {
+  font: {
+    weight: 700;
+    size: 18px;
+  }
+  line-height: 21px;
 }
 
-@mixin title1_Bold42 {
-    font: {
-        weight: 700;
-        size: 42px;
-    }
-    line-height: 62px;
+@mixin body0_Regular16() {
+  font: {
+    weight: 400;
+    size: 16px;
+  }
+  line-height: 19px;
 }
 
-@mixin subtitle0_Bold28 {
-    font: {
-        weight: 700;
-        size: 28px;
-    }
-    line-height: 42px;
+@mixin body0_Bold16() {
+  font: {
+    weight: 700;
+    size: 16px;
+  }
+  line-height: 19px;
 }
 
-@mixin subtitle1_Bold21 {
-    font: {
-        weight: 700;
-        size: 21px;
-    }
-    line-height: 31px;
+@mixin body1_Regular14() {
+  font: {
+    weight: 400;
+    size: 14px;
+  }
+  line-height: 16px;
 }
 
-@mixin body0_Regular16 {
-    font: {
-        weight: 400;
-        size: 16px;
-    }
-    line-height: 24px;
+@mixin body1_Bold14() {
+  font: {
+    weight: 700;
+    size: 14px;
+  }
+  line-height: 16px;
 }
 
-@mixin body0_Bold16 {
-    font: {
-        weight: 700;
-        size: 16px;
-    }
-    line-height: 24px;
-}
-
-@mixin body1_Regular16 {
-    font: {
-        weight: 400;
-        size: 16px;
-    }
-    line-height: 27px;
-}
-
-@mixin body1_Bold16 {
-    font: {
-        weight: 700;
-        size: 16px;
-    }
-    line-height: 27px;
-}
-
-@mixin body2_Bold18 {
-    font: {
-        weight: 700;
-        size: 18px;
-    }
-    line-height: 27px;
-}
-
-@mixin caption0_Bold14 {
-    font: {
-        weight: 700;
-        size: 24px;
-    }
-    line-height: 27px;
+@mixin caption() {
+  font: {
+    weight: 400;
+    size: 18px;
+  }
+  line-height: 21px;
 }

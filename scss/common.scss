@@ -1,6 +1,7 @@
 @import './vendor/normalize';
 
 @import './mixins/font-face';
+@import './mixins/visually-hidden';
 
 @import './global/vars';
 @import './global/fonts';
@@ -8,11 +9,25 @@
 @import './global/typography';
 
 @import './components/container';
-@import './components/logo';
-@import './components/button';
+@import './components/radio';
+@import './components/checkbox';
+@import './components/switch';
+@import './components/btn';
+@import './components/btn-menu';
+@import './components/btn-more';
 
-@import './blocks/header/header';
+@import './blocks/general/general';
 
-@import './blocks/nav/nav';
+@import './blocks/main/main';
 
-@import './blocks/hero/hero';
+@import './blocks/cards/cards';
+
+@import './blocks/card/card';
+
+@import './blocks/sidebar/sidebar';
+
+@import './blocks/widget/widget';
+
+@import './blocks/location/location';
+@import './blocks/location/location-checkbox';
+
