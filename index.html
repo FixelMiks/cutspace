@@ -41,21 +41,26 @@
     <main>
         <section class="hero">
             <div class="hero__container container">
-                <div class="hero__info">
-                    <h1 class="hero__title">
-                        Find your custom matched commercial real estate space.
-                    </h1>
-                    <p class="hero__descr">
-                        In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique
-                    </p>
-                    <form class="hero__form" action="mailto:" method="get" enctype="text/plain">
-                        <label class="" for="email">
-                            <img class="" src="./images/icons/hero/mail.svg" alt="">
-                            <input class="" type="text" name="email" placeholder="Your email address">
-                        </label>
-                        <button class="button" type="submit" name="submit" value="Send">Subscribe</button>
-                    </form>
-                    <img class="hero__banner" src="./images/hero/hero.png" alt="Hero Banner">
+                <div class="hero__main">
+                    <div class="hero__info">
+                        <h1 class="hero__title">
+                            Find your custom matched commercial real estate space.
+                        </h1>
+                        <p class="hero__descr">
+                            In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique
+                        </p>
+                        <form class="hero__form">
+                            <label class="hero__form-mail">
+                                <img class="hero__form-img" src="./images/icons/hero/mail.svg" alt="Mail">
+                                <input class="hero__form-input" type="text" name="email" placeholder="Your email address">
+                            </label>
+                            <button class="button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <picture>
+                        <source srcset="./images/hero/hero.webp, ./images/hero/hero@2x.webp" type="image/webp">
+                        <img class="hero__banner" src="./images/hero/hero.png" srcset="./images/hero/hero@2x.png" alt="Hero Banner">
+                    </picture>
                 </div>
             </div>
         </section>

@@ -388,7 +388,7 @@ html {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  color: #000;
+  color: #323232;
   background-color: #fff;
 }
 
@@ -477,5 +477,35 @@ button {
   font-size: 16px;
   line-height: 24px;
   color: #f78434;
+}
+
+.hero__container {
+  height: 676px;
+}
+
+.hero__main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__info {
+  margin-top: 127px;
+  max-width: 674px;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 79px;
+}
+
+.hero__banner {
+  position: absolute;
+  right: 0;
+  width: 540px;
+  height: 676px;
+  z-index: -5;
 }
 /*# sourceMappingURL=common.css.map */
