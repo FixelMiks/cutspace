@@ -1,3 +1,11 @@
 .button {
-    
+    width: 157px;
+    border-radius: 29px;
+    color: $white;
+    @include body0_Bold16();
+    padding: {
+        top: 17px;
+        bottom: 17px;
+    }
+    background-color: $crusta;
 }

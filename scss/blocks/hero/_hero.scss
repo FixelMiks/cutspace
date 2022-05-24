@@ -4,22 +4,51 @@
     }
 
     &__main {
-        position: relative;
         display: flex;
     }
 
     &__info {
-        margin-top: 127px;
-        max-width: 674px;
+        max-width: 570px;
+        padding-top: 127px;
     }
 
     &__title {
+        margin: 0;
+        margin-left: -100px;
         @include title0_Bold54();
+        transform: translateX(100px);
+    }
+
+    &__descr {
+        margin: {
+            top: 25px;
+            bottom: 43px;
+        }
+        @include body1_Regular16();
+    }
+
+    &__form {
+        &-input {
+            width: 332px;
+            border: transparent;
+            border-radius: 29px 0 0 29px;
+            padding: {
+                top: 17px;
+                bottom: 17px;
+                left: 72px;
+            }
+            box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+            background: url("../images/icons/hero/mail.svg") no-repeat 24px;
+            background-position: 9%;
+        }
+
+        &-button {
+            margin-right: 26px;
+            transform: translateX(-26px);
+        }
     }
 
     &__banner {
-        position: absolute;
-        right: 0;
         width: 540px;
         height: 676px;
         z-index: -5;
