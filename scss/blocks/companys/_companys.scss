@@ -1,0 +1,14 @@
+.companys {
+    &__container {
+        padding: {
+            top: 100px;
+            bottom: 91px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

@@ -547,4 +547,20 @@ button {
      object-fit: cover;
   z-index: -5;
 }
+
+.companys__container {
+  padding-top: 100px;
+  padding-bottom: 91px;
+}
+
+.companys__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 /*# sourceMappingURL=common.css.map */
